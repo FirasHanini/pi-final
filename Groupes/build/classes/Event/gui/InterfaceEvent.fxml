@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="761.0" prefWidth="1021.0" style="-fx-background-color: f5f0e1;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Event.gui.InterfaceEventController">
+   <children>
+      <TableView fx:id="tabview_event" layoutX="489.0" layoutY="239.0" onMouseClicked="#tab_event" prefHeight="240.0" prefWidth="641.0">
+        <columns>
+          <TableColumn fx:id="colnom_event" prefWidth="119.0" text="nom d'evenement" />
+          <TableColumn fx:id="coldate_event" prefWidth="97.0" text="Date" />
+            <TableColumn fx:id="collieu_event" prefWidth="71.0" text="lieu" />
+            <TableColumn fx:id="coldesc_event" prefWidth="274.0" text="description" />
+            <TableColumn fx:id="colprix_event" prefWidth="79.0" text="prix DT" />
+        </columns>
+      </TableView>
+      <Label layoutX="634.0" layoutY="167.0" text="Les evenements">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorpane_event" layoutX="76.0" layoutY="239.0" prefHeight="368.0" prefWidth="307.0">
+         <children>
+            <ImageView fx:id="imageview_event" fitHeight="368.0" fitWidth="307.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btresv_event" layoutX="934.0" layoutY="619.0" mnemonicParsing="false" onMouseClicked="#reserverTicket" prefHeight="40.0" prefWidth="152.0" text="Reserver">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font></Button>
+      <Pane prefHeight="148.0" prefWidth="1171.0" style="-fx-background-color: #1e3d59;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="486.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../ecoart.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="193.0" layoutY="193.0" onMouseClicked="#retour_ev" text="Image">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="79.0" layoutX="6.0" layoutY="706.0" onMouseClicked="#retour_ev" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ret-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

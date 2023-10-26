@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CommentaireGuiController">
+   <children>
+      <TextField fx:id="tfcommentaire" layoutX="16.0" layoutY="414.0" prefHeight="129.0" prefWidth="402.0" promptText="commenter" style="-fx-background-color: #fae7cf;" />
+      <Spinner fx:id="EvalSpinner" editable="true" layoutX="524.0" layoutY="416.0" prefHeight="34.0" prefWidth="74.0" />
+      <Label layoutX="450.0" layoutY="420.0" prefHeight="18.0" prefWidth="73.0" text="évaluation:" />
+      <Button fx:id="ajoutC" layoutX="307.0" layoutY="559.0" mnemonicParsing="false" onAction="#ajouterC" prefHeight="34.0" prefWidth="110.0" style="-fx-background-color: #566573;" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="modifC" layoutX="451.0" layoutY="263.0" mnemonicParsing="false" onMouseClicked="#modifierC" prefHeight="34.0" prefWidth="110.0" style="-fx-background-color: #566573;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="suppC" layoutX="451.0" layoutY="307.0" mnemonicParsing="false" onAction="#supprimerC" prefHeight="34.0" prefWidth="110.0" style="-fx-background-color: #566573;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="tableCommentaire" layoutX="16.0" layoutY="138.0" prefHeight="238.0" prefWidth="410.0" style="-fx-background-color: #fae7cf;">
+         <columns>
+            <TableColumn fx:id="idcol" prefWidth="62.4000244140625" text="IDuser" />
+            <TableColumn fx:id="textcol" prefWidth="95.20001220703125" text="Text" />
+            <TableColumn fx:id="datecol" prefWidth="148.79998779296875" text="Date" />
+            <TableColumn fx:id="evalcol" prefWidth="103.199951171875" text="Evaluation" />
+         </columns></TableView>
+      <Button fx:id="publierbtn" layoutX="431.0" layoutY="559.0" mnemonicParsing="false" onAction="#Publier" prefHeight="34.0" prefWidth="110.0" style="-fx-background-color: #566573;" text="Publier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <HBox prefHeight="100.0" prefWidth="744.0" style="-fx-background-color: #566573;">
+         <children>
+            <Button fx:id="formation" mnemonicParsing="false" onAction="#formation" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #566573;" text="Formation" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" top="35.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="108.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/EcoArt.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="200.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

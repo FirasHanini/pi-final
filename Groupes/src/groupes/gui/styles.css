@@ -1,0 +1,32 @@
+
+/* Styling for TextArea */
+.text-area {
+    -fx-font-size: 14px;
+    -fx-background-color: #f4f4f4;
+    -fx-text-fill: #000;
+}
+
+/* Styling for TextField */
+.text-field {
+    -fx-font-size: 14px;
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+.message-text {
+    -fx-font-size: 14px;
+    -fx-background-color: lightyellow; /* Change the color to your preference */
+    -fx-text-fill: #000; /* Text color */
+}
+
+/* Styling for Buttons */
+.button {
+    -fx-font-size: 14px;
+    -fx-background-color: #007ACC;
+    -fx-text-fill: #fff;
+}
+
+/* Styling for Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #000;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupes.gui.MailGroupController">
+   <children>
+      <TextArea fx:id="MailMessage" layoutX="21.0" layoutY="165.0" prefHeight="258.0" prefWidth="564.0" promptText="Mail" />
+      <Text layoutX="59.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Mail">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="sendMbtn" layoutX="612.0" layoutY="233.0" onMouseClicked="#SendMail" style="-fx-background-color: cyan;" text="Send" />
+      <TextField fx:id="SubjectText" layoutX="21.0" layoutY="121.0" prefHeight="35.0" prefWidth="346.0" promptText="Subject..." />
+      <ImageView fx:id="Sigimg" fitHeight="35.0" fitWidth="32.0" layoutX="376.0" layoutY="120.0" onMouseClicked="#Signature">
+         <image>
+            <Image url="@../../imgs/signature.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

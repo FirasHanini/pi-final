@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="gui.ReclamationClient.ReclamationAjout.ReclamationClientController">
+   <children>
+      <AnchorPane prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: #566573;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="271.0" layoutX="155.0" layoutY="7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../nnn.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="entryContenu" layoutX="94.0" layoutY="277.0" prefHeight="200.0" prefWidth="427.0" promptText="Type Message here" style="-fx-background-color: transparent; -fx-border-color: #566573; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="btnSend" layoutX="274.0" layoutY="524.0" mnemonicParsing="false" onAction="#onSend" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #566573;" text="Send" />
+      <Label layoutX="114.0" layoutY="491.0" text="This Message will be be sent to EcoArt's team" />
+   </children>
+</AnchorPane>

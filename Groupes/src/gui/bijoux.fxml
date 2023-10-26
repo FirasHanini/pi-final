@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: f5f0e1;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.BijouxController">
+     <children>
+      <AnchorPane fx:id="AnchorOrder" layoutX="189.0" prefHeight="511.0" prefWidth="586.0">
+         <children>
+            <ScrollPane layoutX="-2.0" layoutY="4.0" prefHeight="502.0" prefWidth="586.0">
+               <content>
+                  <GridPane fx:id="menu_gridPane" prefHeight="656.0" prefWidth="927.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="poterie" layoutX="24.0" layoutY="195.0" mnemonicParsing="false" onMouseClicked="#poterie" prefHeight="33.0" prefWidth="130.0" style="-fx-background-color: #566573;" text="Poterie" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="tapisserie" layoutX="24.0" layoutY="229.0" mnemonicParsing="false" onAction="#tapisserie" prefHeight="34.0" prefWidth="130.0" style="-fx-background-color: #566573;" text="Tapisserie" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="bijoux" layoutX="24.0" layoutY="264.0" mnemonicParsing="false" onAction="#bijoux" prefHeight="34.0" prefWidth="130.0" style="-fx-background-color: #566573;" text="Bijoux" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="cuisine" layoutX="24.0" layoutY="299.0" mnemonicParsing="false" onAction="#cuisine" prefHeight="34.0" prefWidth="130.0" style="-fx-background-color: #566573;" text="Cuisine" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="boutique" layoutX="24.0" layoutY="21.0" mnemonicParsing="false" onAction="#boutique" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: f5f0e1;" text="Boutique" textFill="#566573">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="128.0" fitWidth="177.0" layoutX="14.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/EcoArt.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

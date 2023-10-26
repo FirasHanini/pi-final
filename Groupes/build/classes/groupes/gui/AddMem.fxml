@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupes.gui.AddMemController">
+   <children>
+      <TableView fx:id="GTable" layoutX="523.0" layoutY="186.0" prefHeight="334.0" prefWidth="287.0">
+         <columns>
+            <TableColumn fx:id="TName" prefWidth="62.39996337890625" text="Name" />
+            <TableColumn fx:id="TPrenom" prefWidth="68.00003051757812" text="Prenom" />
+            <TableColumn fx:id="TEmail" prefWidth="193.60003662109375" text="Email" />
+         </columns>
+      </TableView>
+      <TableView fx:id="GmembersTable" layoutX="92.0" layoutY="196.0" prefHeight="314.0" prefWidth="205.0">
+         <columns>
+            <TableColumn fx:id="GNameCell" prefWidth="52.79991912841797" text="Name" />
+            <TableColumn fx:id="GEmailCell" prefWidth="152.800048828125" text="Email" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="AddGmember" layoutX="381.0" layoutY="215.0" onMouseClicked="#AddGmember" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #566573;" text="Add" textFill="#f7e119" />
+      <JFXButton fx:id="DeleteGMbtn" layoutX="383.0" layoutY="282.0" onMouseClicked="#DeleteGM" style="-fx-background-color: #566573;" text="Delete" textFill="#f7e119" />
+      <JFXButton fx:id="ConfirmGAbtn" layoutX="378.0" layoutY="507.0" onMouseClicked="#ConfirmGA" style="-fx-background-color: #72aeb8;" text="Confirm" textFill="#f7e119" />
+      <Text fx:id="LanguageText" layoutX="62.0" layoutY="161.0" onMouseClicked="#SwitchLanguage" strokeType="OUTSIDE" strokeWidth="0.0" text="eng">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Text>
+      <ImageView fitHeight="17.0" fitWidth="25.0" layoutX="43.0" layoutY="148.0">
+         <image>
+            <Image url="@../../imgs/flag.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="TOP_RIGHT" layoutX="-3.0" layoutY="-7.0" prefHeight="135.0" prefWidth="832.0" style="-fx-background-color: #566573;" AnchorPane.bottomAnchor="430.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="AddMemTXT" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD MEMBERS" textAlignment="CENTER" wrappingWidth="191.283203125">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <ImageView fitHeight="140.0" fitWidth="178.0">
+               <image>
+                  <Image url="@../../imgs/EcoArt.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <Text fx:id="GGNameText" fill="#f7f7f7" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="123.73670196533203">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <ImageView fx:id="ReturnImg" fitHeight="34.0" fitWidth="33.0" layoutX="12.0" layoutY="143.0" onMouseClicked="#Return">
+         <image>
+            <Image url="@../../imgs/return.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

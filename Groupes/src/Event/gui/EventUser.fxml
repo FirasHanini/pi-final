@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="820.0" prefWidth="1111.0" style="-fx-background-color: f5f0e1;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Event.gui.EventUserController">
+    <children>
+      <Label layoutX="24.0" layoutY="229.0" text="Nom de l'evenement ">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="282.0" text="Date ">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="tfnom_u" layoutX="250.0" layoutY="228.0" prefHeight="25.0" prefWidth="128.0" />
+      <DatePicker fx:id="daterev_u" layoutX="250.0" layoutY="281.0" prefHeight="25.0" prefWidth="128.0" />
+      <Button fx:id="btajoutResv_u" layoutX="627.0" layoutY="523.0" mnemonicParsing="false" onMouseClicked="#Ajoutresv_u" text="Ajouter">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btsupResv_u" layoutX="1012.0" layoutY="523.0" mnemonicParsing="false" onMouseClicked="#Supresv_u" text="Supprimer">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btmodifResv_u" layoutX="825.0" layoutY="523.0" mnemonicParsing="false" onMouseClicked="#Modresv_u" text="Modifier">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <TableView fx:id="tabResv_u" layoutX="525.0" layoutY="231.0" onMouseClicked="#tab_u" prefHeight="247.0" prefWidth="621.0">
+        <columns>
+          <TableColumn fx:id="colnom_u" prefWidth="126.0" text="Nom de l'evenement" />
+            <TableColumn fx:id="coldate_u" prefWidth="83.0" text="Date" />
+            <TableColumn fx:id="collieu_u" prefWidth="73.0" text="Lieu" />
+            <TableColumn fx:id="coldesc_u" prefWidth="269.0" text="Description" />
+            <TableColumn fx:id="colprix_u" prefWidth="69.0" text="Prix DT" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="combolieu_u" editable="true" layoutX="250.0" layoutY="342.0" onAction="#combolieu_u" prefWidth="150.0" promptText="les etats" />
+      <Label layoutX="27.0" layoutY="343.0" text="Lieu">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="399.0" text="Description">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></Label>
+      <Button fx:id="btimgResv_u" layoutX="27.0" layoutY="629.0" mnemonicParsing="false" onMouseClicked="#importerImg_u" text="Importer image">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <AnchorPane fx:id="main_u" layoutX="180.0" layoutY="592.0" prefHeight="204.0" prefWidth="240.0">
+         <children>
+            <ImageView fx:id="espaceImg_u" fitHeight="204.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="tfprix_u" layoutX="250.0" layoutY="545.0" prefHeight="25.0" prefWidth="48.0" />
+      <TextArea fx:id="txtdesc_u" layoutX="250.0" layoutY="396.0" prefHeight="112.0" prefWidth="181.0" />
+      <ImageView fx:id="btnext_u" fitHeight="42.0" fitWidth="118.0" layoutX="1060.0" layoutY="754.0" onMouseClicked="#next_u" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../next.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="148.0" prefWidth="1171.0" style="-fx-background-color: #1e3d59;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="486.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ecoart.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="29.0" layoutY="546.0" text="Prix DT">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="168.0" text="Espace user" underline="true">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="715.0" layoutY="185.0" text="Listes des evenements">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="back" fitHeight="42.0" fitWidth="118.0" layoutX="24.0" layoutY="747.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#onBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../next.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

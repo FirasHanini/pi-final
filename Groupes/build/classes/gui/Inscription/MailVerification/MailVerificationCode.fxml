@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Inscription.MailVerification.MailVerificationCodeController">
+   <children>
+      <Label layoutX="45.0" layoutY="37.0" text="We have sent you a code to your email please paste it below !">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codeVerif" layoutX="175.0" layoutY="106.0" promptText="Code" />
+      <Button layoutX="211.0" layoutY="153.0" mnemonicParsing="false" onAction="#onConfirm" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #D68910;" text="Confirm" />
+      <Label fx:id="errorCode" layoutX="86.0" layoutY="83.0" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

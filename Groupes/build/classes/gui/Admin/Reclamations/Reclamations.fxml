@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #737A81;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Admin.Reclamations.ReclamationsController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="206.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../nnn.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="adminsButton" layoutY="100.0" mnemonicParsing="false" onAction="#onAdmins" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Admins" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="utilisateurButton" mnemonicParsing="false" onAction="#onUtilisateur" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Utilisateurs" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="reclamationbtn" mnemonicParsing="false" onAction="#onReclamation" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Reclamations" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <TableView fx:id="reclamationTable" layoutX="228.0" layoutY="125.0" onMouseClicked="#onLigne" prefHeight="212.0" prefWidth="657.0" style="-fx-background-color: transparent;">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="73.60003662109375" text="ID" />
+          <TableColumn fx:id="senderIdColumn" prefWidth="161.60006713867188" text="SenderId" />
+            <TableColumn fx:id="senderUsername" prefWidth="194.39999389648438" text="Username" />
+            <TableColumn fx:id="StateColumn" prefWidth="224.0" text="State" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchEntry" layoutX="679.0" layoutY="35.0" onAction="#searched" promptText="Search" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label fx:id="errorLabel" layoutX="651.0" layoutY="77.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

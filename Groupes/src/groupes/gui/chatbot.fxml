@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupes.gui.ChatbotController">
+
+    <center>
+        <TextArea fx:id="mainTextArea" editable="false" disable="" wrapText="true" />
+    </center>
+
+    <bottom>
+        <BorderPane>
+            <center>
+                <TextField fx:id="messageArea" />
+            </center>
+            <right>
+                <Button fx:id="sendButtonbtn" alignment="BOTTOM_RIGHT" onAction="#sendButton" text="Send" />
+            </right>
+        </BorderPane>
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="832.0" style="-fx-background-color: #f7dea6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupes.gui.AccueilController">
+   <children>
+      <Text layoutX="361.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main" wrappingWidth="148.1781005859375">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="Commbtn" layoutX="159.0" layoutY="262.0" onMouseClicked="#GotoComm" prefHeight="36.0" prefWidth="129.0" style="-fx-background-color: #566573;" text="Communication" textAlignment="CENTER" textFill="#f7e119">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Verdana" size="13.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="Mygroups" layoutX="551.0" layoutY="262.0" onMouseClicked="#GotoMyGrou" prefHeight="36.0" prefWidth="148.0" style="-fx-background-color: #566573;" text="MyGroupes" textFill="#f7e119">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Verdana" size="13.0" />
+         </font></JFXButton>
+      <ImageView fx:id="ReturnImg" fitHeight="34.0" fitWidth="33.0" layoutX="43.0" layoutY="146.0" onMouseClicked="#Return">
+         <image>
+            <Image url="@../../imgs/return.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="ChatBotimg" fitHeight="72.0" fitWidth="96.0" layoutX="722.0" layoutY="417.0" onMouseClicked="#OpenSuppBot">
+         <image>
+            <Image url="@../../imgs/SuppBot.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="24.0" layoutY="434.0">
+         <image>
+            <Image url="@../../imgs/weather.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="8.0" prefHeight="135.0" prefWidth="832.0" style="-fx-background-color: #566573;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="140.0" fitWidth="178.0">
+               <image>
+                  <Image url="@../../imgs/EcoArt.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Text fx:id="weather" layoutX="76.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="89.60003662109375" />
+   </children>
+</AnchorPane>

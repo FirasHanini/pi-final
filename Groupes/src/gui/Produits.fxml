@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="586.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ProduitsController">
+   <children>
+      <TableView fx:id="tableProduit" editable="true" layoutX="216.0" layoutY="140.0" prefHeight="200.0" prefWidth="556.0" style="-fx-background-color: #FAE7CF;">
+        <columns>
+          <TableColumn fx:id="nom" onEditStart="#nomP" prefWidth="75.0" text="NOM" />
+          <TableColumn fx:id="prix" onEditStart="#prixP" prefWidth="75.0" text="PRIX" />
+            <TableColumn fx:id="qte" onEditStart="#qteP" prefWidth="75.0" text="QUANTITE" />
+            <TableColumn fx:id="categ" onEditStart="#categP" prefWidth="75.0" text="CATEGORIE " />
+            <TableColumn fx:id="matiere" onEditStart="#matP" prefWidth="75.0" text="MATIERE" />
+            <TableColumn fx:id="description" onEditStart="#descP" prefWidth="102.40001220703124" text="DESCRIPTION" />
+            <TableColumn fx:id="idPdts" prefWidth="75.0" text="idPdts" />
+        </columns>
+      </TableView>
+      <Button fx:id="supprimer" layoutX="662.0" layoutY="348.0" mnemonicParsing="false" onAction="#supprimerP" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #566573;" text="Supprimer " textFill="WHITE" />
+      <Button fx:id="btnAjouter" layoutX="537.0" layoutY="348.0" mnemonicParsing="false" onMouseClicked="#ajouterP" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #566573;" text="Ajouter" textFill="WHITE" />
+      <HBox layoutX="-1.0" prefHeight="106.0" prefWidth="804.0" style="-fx-background-color: #566573;">
+         <children>
+            <Button fx:id="Home" mnemonicParsing="false" onAction="#Home" prefHeight="26.0" prefWidth="123.0" style="-fx-background-color: #566573;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="menu" mnemonicParsing="false" onAction="#boutiqueLoad" onMouseClicked="#Menu" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #566573;" text="Boutique " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="40.0" />
+               </HBox.margin>
+            </Button>
+            <ImageView fitHeight="106.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/EcoArt.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

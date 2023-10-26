@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReservationFormGuiController">
+   <children>
+      <TextField fx:id="yourname" layoutX="215.0" layoutY="143.0" prefHeight="26.0" prefWidth="186.0" promptText="Nom..." />
+      <TextField fx:id="numCard" layoutX="215.0" layoutY="199.0" prefHeight="26.0" prefWidth="186.0" promptText="num carte" />
+      <ComboBox fx:id="months" layoutX="219.0" layoutY="258.0" prefHeight="26.0" prefWidth="82.0" promptText="mois" />
+      <ComboBox fx:id="years" layoutX="320.0" layoutY="258.0" prefHeight="18.0" prefWidth="82.0" promptText="année" />
+      <TextField fx:id="email" layoutX="214.0" layoutY="371.0" prefHeight="26.0" prefWidth="178.0" promptText="email" />
+      <Button fx:id="confirm" layoutX="250.0" layoutY="452.0" mnemonicParsing="false" onAction="#confirmation" prefHeight="34.0" prefWidth="116.0" text="Confirmer" />
+      <Label layoutX="215.0" layoutY="98.0" prefHeight="18.0" prefWidth="130.0" text="Prix du Formation :" />
+      <Label fx:id="totalAmount" layoutX="355.0" layoutY="98.0" prefHeight="18.0" prefWidth="59.0" text="0.0 " />
+      <PasswordField fx:id="cvc" layoutX="219.0" layoutY="315.0" prefHeight="26.0" prefWidth="68.0" promptText="CVC" />
+   </children>
+</AnchorPane>

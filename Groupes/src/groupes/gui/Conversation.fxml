@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupes.gui.ConversationController">
+   <children>
+      <TableView fx:id="GTable" layoutX="476.0" layoutY="197.0" prefHeight="314.0" prefWidth="306.0">
+         <columns>
+            <TableColumn fx:id="TName" prefWidth="62.39996337890625" text="Name" />
+            <TableColumn fx:id="TPrenom" prefWidth="68.00003051757812" text="Prenom" />
+            <TableColumn fx:id="TEmail" prefWidth="193.60003662109375" text="Email" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="OpenConvbtn" layoutX="285.0" layoutY="336.0" onMouseClicked="#OpenConv" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: #566573;" text="Open Conversation" textFill="#f7e119" />
+      <ImageView fx:id="ReturnImg" fitHeight="34.0" fitWidth="33.0" layoutX="14.0" layoutY="143.0" onMouseClicked="#Return">
+         <image>
+            <Image url="@../../imgs/return.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <HBox alignment="TOP_RIGHT" layoutX="7.0" layoutY="3.0" prefHeight="135.0" prefWidth="832.0" style="-fx-background-color: #566573;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Communication">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <ImageView fitHeight="140.0" fitWidth="178.0">
+               <image>
+                  <Image url="@../../imgs/EcoArt.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <Text fx:id="GGNameText" fill="#f7f7f7" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="123.73670196533203">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

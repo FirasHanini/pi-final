@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.homePage.HomPageController">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="110.0" layoutX="39.0" layoutY="418.0" onMouseClicked="#onConversation">
+         <image>
+            <Image url="@../../imgs/conversatio.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane prefHeight="98.0" prefWidth="762.0" style="-fx-background-color: #566573;">
+         <children>
+            <ImageView fx:id="picphoto" fitHeight="61.0" fitWidth="96.0" layoutX="646.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Hyperlink fx:id="profil" layoutX="595.0" layoutY="16.0" onAction="#onProfil" text="Profil" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="disconnect" layoutX="559.0" layoutY="56.0" onAction="#onDisconnect" text="Disconnect" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fx:id="imageLogo" fitHeight="85.0" fitWidth="152.0" layoutX="195.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../nnn.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="51.0" layoutX="40.0" layoutY="26.0">
+               <image>
+                  <Image url="@../../imgs/weather.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="weather" fill="WHITE" layoutX="124.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="102.39996337890625" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="home" layoutX="60.0" layoutY="159.0" mnemonicParsing="false" onAction="#onHome" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white; -fx-border-color: #566573;" text="Home">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="shop" layoutX="156.0" layoutY="159.0" mnemonicParsing="false" onAction="#onShop" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white; -fx-border-color: #566573;" text="Shop">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="formation" layoutX="252.0" layoutY="159.0" mnemonicParsing="false" onAction="#onFormation" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white; -fx-border-color: #566573;" text="Formation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Event" layoutX="348.0" layoutY="159.0" mnemonicParsing="false" onAction="#onEvent" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white; -fx-border-color: #566573;" text="Event">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="contact" layoutX="444.0" layoutY="159.0" mnemonicParsing="false" onAction="#onContact" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white; -fx-border-color: #566573;" text="Contact Us">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="userSearch" layoutX="284.0" layoutY="114.0" onAction="#OnSearch" prefHeight="26.0" prefWidth="128.0" promptText="Search user" style="-fx-background-color: white; -fx-border-color: #566573; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label fx:id="errorLabel" layoutX="348.0" layoutY="118.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="groups" layoutX="540.0" layoutY="159.0" mnemonicParsing="false" onAction="#onGroups" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: white; -fx-border-color: #566573;" text="Groups">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="ChatBotimg" fitHeight="70.0" fitWidth="102.0" layoutX="646.0" layoutY="413.0" onMouseClicked="#OpenSuppBot">
+         <image>
+            <Image url="@../../imgs/SuppBot.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

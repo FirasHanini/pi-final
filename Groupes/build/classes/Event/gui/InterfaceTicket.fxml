@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="401.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Event.gui.InterfaceTicketController">
+   <children>
+      <ImageView fitHeight="454.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../vv.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="197.0" layoutY="26.0" text="Votre ticket" underline="true">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="122.0" text="Nom de l'évenement" underline="true">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="188.0" text="Date de l'evenement" underline="true">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="122.0" text="Lieu" underline="true">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelnom" layoutX="220.0" layoutY="123.0" prefHeight="17.0" prefWidth="122.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labeldate" layoutX="215.0" layoutY="189.0" prefHeight="17.0" prefWidth="122.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labellieu" layoutX="438.0" layoutY="123.0" prefHeight="17.0" prefWidth="110.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="368.0" layoutY="188.0" text="Prix DT" underline="true">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelprix" layoutX="461.0" layoutY="189.0" prefHeight="21.0" prefWidth="122.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="imprimepdf" layoutX="258.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#imprimeticket" text="Exporter">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="85.0" fitWidth="122.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ecoart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="QRpath_a" fitHeight="98.0" fitWidth="136.0" layoutX="454.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="18.0" layoutY="245.0" text="Nom" underline="true">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="363.0" layoutY="245.0" text="Prénom" underline="true">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="293.0" text="CIN" underline="true">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelticketnom" layoutX="80.0" layoutY="248.0" prefHeight="21.0" prefWidth="110.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelticketprenom" layoutX="461.0" layoutY="246.0" prefHeight="21.0" prefWidth="100.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelticketcin" layoutX="80.0" layoutY="296.0" prefHeight="21.0" prefWidth="122.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backbtn" layoutX="27.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#back" text="back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onMouseClicked="#Ajout" prefHeight="695.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FormationGuiController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c87a19" height="114.0" layoutX="-1.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="970.0" />
+      <TableView fx:id="tableFormation" editable="true" layoutX="122.0" layoutY="301.0" prefHeight="246.0" prefWidth="789.0" style="-fx-background-color: #fae7cf;">
+        <columns>
+          <TableColumn fx:id="idcolumn" onEditStart="#id" prefWidth="93.5999755859375" text="Id" />
+            <TableColumn fx:id="titrecolumn" onEditStart="#titre" prefWidth="80.7999267578125" text="Titre" />
+            <TableColumn fx:id="categoriecolumn" onEditStart="#categorie" prefWidth="77.60003662109375" text="Catégorie" />
+            <TableColumn fx:id="prixcolumn" onEditStart="#prix" prefWidth="102.4000244140625" text="Prix" />
+            <TableColumn fx:id="remisecolumn" onEditStart="#remise" prefWidth="88.0" text="Remise" />
+            <TableColumn fx:id="dureecolumn" onEditStart="#duree" prefWidth="104.79998779296875" text="Durée" />
+            <TableColumn fx:id="descriptioncolumn" onEditStart="#description" prefWidth="108.0" text="Description" />
+            <TableColumn fx:id="videocolumn" onEditStart="#video" prefWidth="132.79995117187502" text="Video" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfsearch" layoutX="355.0" layoutY="142.0" prefHeight="26.0" prefWidth="310.0" />
+      <ImageView fitHeight="201.0" fitWidth="376.0" layoutX="-38.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo/logo%20pidev.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSupprimer" layoutX="775.0" layoutY="580.0" mnemonicParsing="false" onAction="#delete" prefHeight="34.0" prefWidth="119.0" style="-fx-background-color: #c87a19;" text="Supprimer" />
+      <Button fx:id="btnModifier" layoutX="581.0" layoutY="580.0" mnemonicParsing="false" onAction="#modif" prefHeight="34.0" prefWidth="119.0" style="-fx-background-color: #c87a19;" text="Afficher" />
+      <Button fx:id="btnAjouter" layoutX="373.0" layoutY="580.0" mnemonicParsing="false" onAction="#Ajout" prefHeight="34.0" prefWidth="119.0" style="-fx-background-color: #c87a19;" text="Ajouter" />
+      <Button fx:id="menubtn" layoutX="28.0" layoutY="626.0" mnemonicParsing="false" onAction="#menu" prefHeight="34.0" prefWidth="119.0" style="-fx-background-color: #5B524F;" text="Menu" textFill="#ae6422">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
